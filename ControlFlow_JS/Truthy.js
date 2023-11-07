@@ -25,3 +25,24 @@ if (Object.keys(obj).length === 0){
 }
 
 
+// Nullish Coalescing Operator (??) : null undefined
+
+let val;
+//val = 5 ?? 10 // it will gives 5
+//val = null ?? 10 // here it will give 10 
+//val = undefined ?? 15 // here it will give 15
+val = null ?? 10 ?? 15 // here it will give 10 first true value
+
+// ?? it is generally used for handling the errors 
+// In any condition if we get null or undefined value so for tackle this error we use ?? and write a function that will execute when we get null or undefined.
+
+console.log(val);
+
+
+// Terniary Operator
+
+// Condition ? true : false
+
+const price = 200
+
+price <=100 ? console.log("LESS THAN 100") : console.log("more than 100");
