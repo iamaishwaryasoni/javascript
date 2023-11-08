@@ -4,10 +4,12 @@ const promiseOne = new Promise(function (resolve, reject) {
 
     setTimeout(function (){
         console.log('Async task is complete');
-        resolve()
+        // First this will execute 
+        resolve() // then this resolve call
     }, 1000);
 })
 
 promiseOne.then(function(){
     console.log("promise consumed");
+    // when the resolve is called this will execute.
 })
